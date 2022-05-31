@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -13,6 +13,7 @@ ul {
 
 p {
     margin: 0;
+    margin: 0;
 }
 
 a{
@@ -25,7 +26,7 @@ header {
 }
 
 .wrapper {
-    max-width: 75%;
+    width: 950px;
     margin: 0 auto;
 }
 
@@ -39,7 +40,8 @@ nav .link,
 
 nav,
 .hero,
-.info {
+.info,
+.quote {
     margin-bottom: 100px;
 }
 
@@ -59,6 +61,7 @@ nav,
 .hero .title {
     font-size: 48px;
     color: #f9faf8;
+    font-weight: 800;
 }
 
 .hero .card {
@@ -71,15 +74,74 @@ nav,
 
 .hero .buttons {
     background-color: #3B82F6;
-    padding: 8px 30px;
+    padding: 5px 25px;
     color: #ffff;
     border-radius: 5px;
     border: none;
 }
 
+.hero .image {
+    background-color: #6C747D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .info .title {
     margin: 40px 0;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
+.info .card-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.info .card {
+    flex: 0 0 200px;
+}
+
+.info .image {
+    display: block;
+    height: 200px;
+    border-radius: 10px;
+    border: #3B82F6 5px solid;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.info .text {
+    text-align: center;
+}
+
+
+.quote {
+    background-color: #E4E7EB;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote .wrapper {
+    flex-basis: 800px;
+}
+
+.quote .text{
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
 
 }
 
-/* 繼續 .info */
+.quote .author {
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: end;
+}
