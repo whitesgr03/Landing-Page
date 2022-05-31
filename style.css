@@ -19,9 +19,11 @@ a{
     text-decoration: none;
 }
 
-header {
+header,
+footer {
     background-color: #1f2937;
     padding: 10px;
+    color: #f9faf8;
 }
 
 .wrapper {
@@ -49,7 +51,6 @@ nav,
 .logo,
 .banner .title {
     font-size: 24px;
-    color: #f9faf8
 }
 
 .link a,
@@ -104,18 +105,18 @@ nav,
 .info .card-wrapper{
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 60px;
 }
 
 .info .card {
-    flex: 0 0 200px;
+    flex: 0 0 150px;
 }
 
 .info .image {
     display: block;
-    height: 200px;
+    height: 150px;
     border-radius: 10px;
-    border: #3B82F6 5px solid;
+    border: #3B82F6 3px solid;
     box-sizing: border-box;
     margin-bottom: 10px;
 }
@@ -166,4 +167,9 @@ nav,
 .banner .buttons {
     background-color: transparent;
     border: #ffff 1px solid;
+}
+
+footer {
+    padding: 30px 0;
+    text-align: center
 }
